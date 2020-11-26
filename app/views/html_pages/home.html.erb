@@ -1,0 +1,11 @@
+<% provide(:title, 'Home') %>   <!-- provide stores a block of markup in an identifier for later use. In this case, 'Help' in the symbol :title. The provide is enclosed in percentage to indicate it is executing this code and not printing out in the view. -->
+                                    
+<div class="center jumbotron">
+  <h1>Welcome to Elisio</h1>
+  <h2>
+    This is the homepage of the Elisio application. You can find the codebase for this application at
+    <a href="https://github.com/goncaloelisio/Elisio-Ruby-On-Rails">my GitHub account.</a>
+  </h2>
+
+  <%= link_to "Create an account", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
